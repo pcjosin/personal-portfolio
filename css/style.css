@@ -1,10 +1,15 @@
 .body{
-background-image: url("../images/background.jpg");   
  width: 100%;
     height:100%;
     position: absolute;
-
+    background-image: url("../images/background.jpg");
+    background-size:cover;
+        overflow: hidden;
+    /* background-color: #999999; */
 }
+
+
+
 .header{
     height:65px;
     width:100%;
@@ -33,70 +38,718 @@ background-image: url("../images/background.jpg");
     font-size: larger;
         font-weight: 400;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: white;
+        color: black;
 }
 .link a{
     font-weight: 500;
-    color: white;
+    color: black;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .link :hover{
-    color: yellow;
+    color: red;
 }
 .rectangle-right{
-    width:55%;
-    height:50%;
-    background-color: red;
-    position: relative;
-    left:40%;
-    top:10%;
+    width: 600px;
+    height: 250px;
+    background-color: rgb(246, 255, 0);
+    position: absolute;
+    left:42%;
+    top:20%;
     border-radius: 20px;
     opacity: 30%;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    animation-name: left-slide-in;
+    animation-duration: 4s;
 
 }
-.rectangle-left{
-        width: 50%;
-        height: 50%;
-        background-color: blue;
+.rectangle-top {
+    width: 250px;
+    height: 400px;
+    background-color: rgb(68, 255, 0);
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    border-radius: 20px;
+    opacity: 30%;
+        box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    animation-name: bottom-slide-in;
+    animation-duration: 4s;
+
+}
+.rectangle-bottom {
+    width: 250px;
+    height: 400px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    border-radius: 20px;
+    opacity: 30%;
+        box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    animation-name: top-slide-in;
+    animation-duration: 4s;
+
+}
+
+.rectangle-left {
+    width: 600px;
+    height: 250px;
+    background-color: blue;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    border-radius: 20px;
+    opacity: 30%;
+        box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    animation-name: right-slide-in;
+    animation-duration: 4s;
+
+}
+
+
+
+@keyframes left-slide-in {
+    from{
+    width: 600px;
+        height: 250px;
+        background-color: rgb(246, 255, 0);
         position: absolute;
-        left: 5%;
-        top:30%;
+        left: 0%;
+        top: 20%;
         border-radius: 20px;
         opacity: 30%;
+    }
+    to{
+    width: 600px;
+        height: 250px;
+        background-color: rgb(246, 255, 0);
+        position: absolute;
+        left: 42%;
+        top: 20%;
+        border-radius: 20px;
+        opacity: 30%;
+            box-shadow: 10px 10px 5px rgb(0, 0, 0);
+
+    }
+    
+   
+}
+
+@keyframes top-slide-in {
+    from {
+         width: 250px;
+        height: 400px;
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+        left: 50%;
+        top: -400px;
+        border-radius: 20px;
+        opacity: 30%;
+    }
+
+    to {
+        width: 250px;
+        height: 400px;
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        border-radius: 20px;
+        opacity: 30%;
+            box-shadow: 10px 10px 5px rgb(0, 0, 0);
+
+    }
+
 
 }
+
+@keyframes bottom-slide-in {
+    from {
+            width: 250px;
+                height: 400px;
+                background-color: rgb(68, 255, 0);
+                position: absolute;
+                left: 30%;
+                top: 100%;
+                border-radius: 20px;
+                opacity: 30%;
+    }
+
+    to {
+            width: 250px;
+                height: 400px;
+                background-color: rgb(68, 255, 0);
+                position: absolute;
+                left: 30%;
+                top: 10%;
+                border-radius: 20px;
+                opacity: 30%;
+                    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    }
+
+
+}
+
+
+
+@keyframes right-slide-in {
+    from {
+    width: 600px;
+        height: 250px;
+        background-color: blue;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        border-radius: 20px;
+        opacity: 30%;
+    }
+
+    to {
+        width: 600px;
+        height: 250px;
+        background-color: blue;
+        position: absolute;
+        left: 15%;
+        top: 50%;
+        border-radius: 20px;
+        opacity: 30%;
+            box-shadow: 10px 10px 5px rgb(0, 0, 0);
+
+    }
+
+
+}
+
 .center-text{
     position: absolute;
     left:20%;
-    top: 40%;
+    top: 35%;
 }
 .j{
     color:red;
+        font-size: 65px;
 
 }
 .ust{
-    color:white;
+    color:black;
+        font-size: 65px;
 
 }
 .Jos{
     color:red;
     font-weight: 600;
+        font-size: 100px;
 
 }
 .i{
-    color:blue;
+    color:black;
     font-weight: 600;
+        font-size: 100px;
 }
 .n{
     color:red;
     font-weight: 600;
+        font-size: 100px;
 }
 .here{
-    color:white;
+    color:black;
+    font-size: 70px;
 }
 .ctext{
-    font-size: 600%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+/* about page section... */
+
+.body-about {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    overflow: hidden;
+    /* background-color: #999999; */
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+
+}
+.bgimage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("../images/aboutbackground.jpg");
+    animation-name: zoombg;
+    animation-duration: 4s;
+    z-index: -1;
+    transform: scale(1.1);
+
+}
+
+
+
+@keyframes zoombg{
+    from {
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
+.leaf-rightl{
+    transform: skew(-30deg);
+    position: absolute;
+    background-color: rgb(23, 61, 48);
+
+
+}
+.l-one{
+    width: 150px;
+    height: 150px;
+    left:97%;
+    top: 30%;
+}
+.l-two {
+    width: 250px;
+    height: 250px;
+    left: 95%;
+    top: 40%;
+}
+.l-three {
+    width: 350px;
+    height: 350px;
+    left: 90%;
+    top: 60%;
+}
+
+
+.leaf-rightm {
+    transform: skew(-30deg);
+    position: absolute;
+    background-color: rgb(39, 130, 98);
+        z-index: 1;
+
+
+}
+
+.m-one {
+    width: 120px;
+    height: 120px;
+    left: 99%;
+    top: 45%;
+}
+
+.m-two {
+    width: 200px;
+    height: 200px;
+    left: 97%;
+    top: 55%;
+}
+
+.m-three {
+    width: 280px;
+    height: 280px;
+    left: 95%;
+    top: 70%;
+}
+.treetop{
+    background-color: green;
+    transform:  rotate(-65deg) skew(-45deg);
+    width: 250px;
+        height: 250px;
+        left: 75%;
+        top:99%;
+        position:absolute;
+            z-index: 1;
+}
+
+
+
+
+
+/* left trees */
+
+.leaf-leftk {
+    transform: skew(30deg);
+    position: absolute;
+    background-color: rgb(46, 96, 78);
+    z-index: 1;
+    
+
+}
+
+.k-one {
+    width: 150px;
+    height: 150px;
+    left: -8%;
+    top: 38%;
+}
+
+.k-two {
+    width: 250px;
+    height: 250px;
+    left: -14%;
+    top: 45%;
+}
+
+.k-three {
+    width: 350px;
+    height: 350px;
+    left: -17%;
+    top: 65%;
+}
+
+.treetop {
+    background-color: green;
+    transform: rotate(-65deg) skew(-45deg);
+    width: 250px;
+    height: 250px;
+    left: 75%;
+    top: 99%;
+    position: absolute;
+}
+
+.treetopleft {
+    background-color: rgb(27, 87, 27);
+    transform: rotate(-65deg) skew(-45deg);
+    width: 270px;
+    height: 270px;
+    left: 2%;
+    top: 97%;
+    position: absolute;
+}
+.about-container{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    left:15%;
+    top:20%;
+    background-color: white;
+    background: rgba(255,255,255, 0.7);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+.josin-image{
+    padding:15px;
+}
+.josin-image-image{
+    height: 100%;
+    opacity: 100%;
+    border-radius: 10px;
+}
+.about-text-container{
+    padding:30px;
+    flex:1;
+
+}
+.about-title{
+    color:#2d4832;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+}
+.about-text{
+    color: #202b22;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+
+/* interests */
+.bgimage-interests {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("../images/interests...jpg");
+    animation-name: zoombg;
+    animation-duration: 4s;
+        background-size: cover;
+    z-index: -1;
+    transform: scale(1.1);
+
+}
+.background-interest {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+
+}
+.body-interests {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    overflow: hidden;
+    /* background-color: #999999; */
+}
+.interest-container{
+    position: absolute;
+    height:70%;
+    width:80%;
+    background: rgba(190, 218, 235, 0.7);    left:10%;
+    top:10%;
+    padding:20px;
+    border-radius: 20px;
+}
+.interest-row{
+    display:flex;
+    margin: 20px;
+}
+.interest-box1{
+    height:200px;
+    width:200px;
+    flex:1;
+    display:flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:10px;
+    background: rgba(255, 255, 255, 0.7);
+}
+.interest-box2 {
+        margin: 10px;
+        height: 200px;
+            flex: 1;
+                width: 200px;
+                    display: flex;
+    border-radius: 10px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.7);
+}
+.interest-box3 {
+        margin: 10px;
+        height: 200px;
+            flex: 1;
+                width: 200px;
+                    display: flex;
+                    border-radius: 10px;
+                        overflow: hidden;
+                        background: rgba(255, 255, 255, 0.7);
+}
+.interest-box4 {
+        margin: 10px;
+        height: 200px;
+            flex: 1;
+                width: 200px;
+                    display: flex;
+                    border-radius: 10px;
+                        overflow: hidden;
+                        background: rgba(255,255,255, 0.7);
+}
+
+
+.interest-image{
+    height:100%;
+    
+}
+
+.interest-titletop{
+    color: rgb(48, 48, 83);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.interest-title {
+    color: rgb(48, 48, 83);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    padding: 10px;
+}
+.interesttext{
+    padding:5px;
+}
+.interest-content{
+    color: rgb(47, 47, 53);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: medium;
+        font-weight: 400;
+        padding: 10px;
+}
+
+.ice{
+    background: rgba(105, 184, 230, 0.525);
+}
+.iceone{
+        transform: skew(-60deg);
+        position: absolute;
+        z-index: 1;
+        left:97%;
+        top:20%;
+        animation-name: iceone;
+        animation-duration: 4s;
+        height:300px;
+        width:300px;
+}
+@keyframes iceone {
+    from{
+        left:110%;
+        top:10%;
+    }
+    to{
+        left: 97%;
+        top: 20%;
+    }
+    
+}
+
+.icetwo {
+    transform: skew(-50deg) rotate(20deg);
+    position: absolute;
+    z-index: 1;
+    left: 97%;
+    top: 50%;
+    animation-name: icetwo;
+    animation-duration: 4s;
+    height: 250px;
+    width: 300px;
+}
+
+@keyframes icetwo {
+    from {
+        left: 110%;
+        top: 55%;
+    }
+
+    to {
+        left: 97%;
+        top: 50%;
+    }
+
+}
+
+.icethree {
+    transform: skew(50deg) rotate(100deg);
+    position: absolute;
+    z-index: 1;
+    left: 70%;
+    top: 90%;
+    animation-name: icethree;
+    animation-duration: 4s;
+    height: 250px;
+    width: 300px;
+}
+
+@keyframes icethree {
+    from {
+        left: 90%;
+        top: 100%;
+    }
+
+    to {
+    left: 70%;
+        top: 90%;
+    }
+
+}
+
+/* contact */
+
+.bgimage-contact {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("../images/sunset.jpg");
+    animation-name: zoombg;
+    animation-duration: 4s;
+    background-size: cover;
+    z-index: -1;
+    transform: scale(1.1);
+
+}
+
+.background-contact {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.body-contact {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    overflow: hidden;
+    /* background-color: #999999; */
+}
+
+.contact-container{
+    position: absolute;
+        height: 70%;
+        width: 70%;
+        background: rgba(235, 222, 190, 0.7);
+        left: 10%;
+        top: 10%;
+        padding: 50px;
+        border-radius: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.contact-title{
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(76, 37, 37);
+    margin-left: 33%;
+    
+}
+
+.inputtextbox{
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border-width: 0;
+    margin-right: 30px;
+}
+.button{
+    width: 200px;
+        height: 35px;
+        border-radius: 5px;
+        border-width: 0;
+        padding-right: 20px;
+        background-color: rgb(223, 76, 76);
+        color: white;
+
+}
+
+.social-links{
+    display: flex;
+    padding:100px;
+
+}
+.xlogo{
+height:60px;
+}
+.linkedinlogo{
+height: 60px;}
+.githublogo{
+height: 60px;
+border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(42, 26, 26);
+}
+.linker{
+    flex:1;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.contact-form{
+    margin-left: 30%;
+}
+.linker:hover{
+    transform: scale(1.2);
+    transition-delay: 0.5s;
+}
