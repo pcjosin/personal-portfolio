@@ -1,0 +1,102 @@
+.body{
+background-image: url("../images/background.jpg");   
+ width: 100%;
+    height:100%;
+    position: absolute;
+
+}
+.header{
+    height:65px;
+    width:100%;
+    display: flex;
+}
+.logo-name{
+    flex:1;
+    padding: 20px;
+}
+.navigation{
+    display:flex;
+
+}
+.link{
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+.logo-first-name{
+    font-size: larger;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:red;
+}
+.logo-second-name{
+    font-size: larger;
+        font-weight: 400;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+}
+.link a{
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.link :hover{
+    color: yellow;
+}
+.rectangle-right{
+    width:55%;
+    height:50%;
+    background-color: red;
+    position: relative;
+    left:40%;
+    top:10%;
+    border-radius: 20px;
+    opacity: 30%;
+
+}
+.rectangle-left{
+        width: 50%;
+        height: 50%;
+        background-color: blue;
+        position: absolute;
+        left: 5%;
+        top:30%;
+        border-radius: 20px;
+        opacity: 30%;
+
+}
+.center-text{
+    position: absolute;
+    left:20%;
+    top: 40%;
+}
+.j{
+    color:red;
+
+}
+.ust{
+    color:white;
+
+}
+.Jos{
+    color:red;
+    font-weight: 600;
+
+}
+.i{
+    color:blue;
+    font-weight: 600;
+}
+.n{
+    color:red;
+    font-weight: 600;
+}
+.here{
+    color:white;
+}
+.ctext{
+    font-size: 600%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
