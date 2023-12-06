@@ -7,6 +7,9 @@
         overflow: hidden;
     /* background-color: #999999; */
 }
+.active-tab {
+    color: red;
+}
 
 
 
@@ -753,3 +756,5 @@ a{
     transform: scale(1.2);
     transition-delay: 0.5s;
 }
+
+
